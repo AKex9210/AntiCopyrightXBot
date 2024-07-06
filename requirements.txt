@@ -1,4 +1,6 @@
 pyrogram
 tgcrypto
 apscheduler
-
+flask_restful
+flask
+gunicorn
