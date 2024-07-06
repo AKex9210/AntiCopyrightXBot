@@ -1,1 +1,1 @@
-worker: python3 copyright.py
+worker: bash start.sh
