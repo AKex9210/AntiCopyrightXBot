@@ -26,30 +26,30 @@ DISABLE_CHATS = []
 GROUP_MEDIAS = {}
 
 DELETE_MESSAGE = [
-"1 Hour complete, I'm doing my work...",
-"Its time to delete all medias!",
-"No one can Copyright until I'm alive 😤",
-"Hue hue, let's delete media...",
-"I'm here to delete medias 🙋", 
-"😮‍💨 Finally I delete medias",
-"Great work done by me 🥲",
-"All media cleared!",
-"hue hue medias deleted by me 😮‍💨",
-"medias....",
-"it's hard to delete all medias 🙄",
+"1 ʜᴏᴜʀ ᴄᴏᴍᴘʟᴇᴛᴇ, ɪ'ᴍ ᴅᴏɪɴɢ ᴍʏ ᴡᴏʀᴋ...",
+"ɪᴛꜱ ᴛɪᴍᴇ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇᴅɪᴀꜱ!",
+"ɴᴏ ᴏɴᴇ ᴄᴀɴ ᴄᴏᴘʏʀɪɢʜᴛ ᴜɴᴛɪʟ ɪ'ᴍ ᴀʟɪᴠᴇ 😤",
+"ʜᴜᴇ ʜᴜᴇ, ʟᴇᴛ'ꜱ ᴅᴇʟᴇᴛᴇ ᴍᴇᴅɪᴀ...",
+"ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴍᴇᴅɪᴀꜱ 🙋",
+"😮‍💨 ꜰɪɴᴀʟʟʏ ɪ ᴅᴇʟᴇᴛᴇ ᴍᴇᴅɪᴀꜱ",
+"ɢʀᴇᴀᴛ ᴡᴏʀᴋ ᴅᴏɴᴇ ʙʏ ᴍᴇ 🥲",
+"ᴀʟʟ ᴍᴇᴅɪᴀ ᴄʟᴇᴀʀᴇᴅ!",
+"ʜᴜᴇ ʜᴜᴇ ᴍᴇᴅɪᴀꜱ ᴅᴇʟᴇᴛᴇᴅ ʙʏ ᴍᴇ 😮‍💨",
+"ᴍᴇᴅɪᴀꜱ....",
+"ɪᴛ'ꜱ ʜᴀʀᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇᴅɪᴀꜱ 🙄",
 ]
 
 START_MESSAGE = """
-**Hello {}, I'm Anti - CopyRight Bot**
+**ʜᴇʟʟᴏ {}, ɪ'ᴍ ᴀɴᴛɪ - ᴄᴏᴘʏʀɪɢʜᴛ ʙᴏᴛ**
 
- > **I can save your groups from Copyrights 😉**
+**ɪ ᴄᴀɴ ꜱᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ꜰʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛꜱ 😉**
 
- **Work:** I'll Delete all medias of your group in every 1 hour ➰
- 
- **Process?:** Simply add me in your group and promote as admin with delete messages right!
+**ᴡᴏʀᴋ:** ɪ'ʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇᴅɪᴀꜱ ᴏꜰ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪɴ ᴇᴠᴇʀʏ 1 ʜᴏᴜʀ ➰
+
+**ᴘʀᴏᴄᴇꜱꜱ?:** ꜱɪᴍᴘʟʏ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀꜱ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ʀɪɢʜᴛ!
 """
 
-BUTTON = [[InlineKeyboardButton("+ Add me in group +", url="http://t.me/AntiCopyRightRobot?startgroup=s&admin=delete_messages")]]
+BUTTON = [[InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ 🧸", url="http://t.me/StormAntiCopyright_bot?startgroup=s&admin=delete_messages")]]
 
 RiZoeL = Client('RiZoeL-Anti-CopyRight', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
@@ -61,10 +61,10 @@ def add_user(user_id):
 async def ping(_, e: Message):
    start = datetime.datetime.now()
    add_user(e.from_user.id)
-   rep = await e.reply_text("**Pong !!**")
+   rep = await e.reply_text("⚡")
    end = datetime.datetime.now()
    ms = (end-start).microseconds / 1000
-   await rep.edit_text(f"🤖 **PONG**: `{ms}`ᴍs")
+   await rep.edit_text(f"🤖 **ᴘᴏɴɢ**: `{ms}`ᴍs")
 
 @RiZoeL.on_message(filters.command(["help", "start"]))
 async def start_message(_, message: Message):
@@ -73,24 +73,31 @@ async def start_message(_, message: Message):
 
 @RiZoeL.on_message(filters.user(DEVS) & filters.command(["restart", "reboot"]))
 async def restart_(_, e: Message):
-   await e.reply("**Restarting.....**")
-   try:
-      await RiZoeL.stop()
-   except Exception:
-      pass
-   args = [sys.executable, "copyright.py"]
-   os.execl(sys.executable, *args)
-   quit()
+    await e.reply("**ʀᴇꜱᴛᴀʀᴛɪɴɢ.....**")
+    try:
+        await RiZoeL.stop()
+    except Exception as ex:
+        print(f"ᴇʀʀᴏʀ ꜱᴛᴏᴘᴘɪɴɢ ᴛʜᴇ ʙᴏᴛ: {ex}")
+    
+    try:
+        args = [sys.executable, "start.sh"]
+        os.execl(sys.executable, *args)
+    except Exception as ex:
+        print(f"ᴇʀʀᴏʀ ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴛʜᴇ ʙᴏᴛ: {ex}")
+        await e.reply("**ꜰᴀɪʟᴇᴅ ᴛᴏ ʀᴇꜱᴛᴀʀᴛ. ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ʟᴏɢꜱ ꜰᴏʀ ᴅᴇᴛᴀɪʟꜱ.**")
+    finally:
+        quit()
+
 
 @RiZoeL.on_message(filters.user(DEVS) & filters.command(["stat", "stats"]))
 async def status(_, message: Message):
-   wait = await message.reply("Fetching.....")
-   stats = "**Here is total stats of me!** \n\n"
-   stats += f"Total Chats: `{len(ALL_GROUPS)}` \n"
-   stats += f"Total users: `{len(TOTAL_USERS)}` \n"
-   stats += f"Disabled chats: `{len(DISABLE_CHATS)}` \n"
-   stats += f"Total Media active chats: `{len(MEDIA_GROUPS)}` \n\n"
-   #stats += f"**© @RiZoeLX**"
+   wait = await message.reply("ꜰᴇᴛᴄʜɪɴɢ.....")
+   stats = "**ʜᴇʀᴇ ɪꜱ ᴛᴏᴛᴀʟ ꜱᴛᴀᴛꜱ ᴏꜰ ʙᴏᴛ** \n\n"
+   stats += f"ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ: `{len(ALL_GROUPS)}` \n"
+   stats += f"ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: `{len(TOTAL_USERS)}` \n"
+   stats += f"ᴅɪꜱᴀʙʟᴇᴅ ᴄʜᴀᴛꜱ: `{len(DISABLE_CHATS)}` \n"
+   stats += f"ᴛᴏᴛᴀʟ ᴍᴇᴅɪᴀ ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛꜱ: `{len(MEDIA_GROUPS)}` \n\n"
+   stats += f"**© @ll_KEX_ll**"
    await wait.edit_text(stats)
 
 
@@ -99,7 +106,7 @@ async def status(_, message: Message):
 async def enable_disable(Rizoel: RiZoeL, message: Message):
    chat = message.chat
    if chat.id == message.from_user.id:
-      await message.reply("Use this command in group!")
+      await message.reply("ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ")
       return
    txt = ' '.join(message.command[1:])
    if txt:
@@ -107,35 +114,35 @@ async def enable_disable(Rizoel: RiZoeL, message: Message):
       if re.search("on|yes|enable".lower(), txt.lower()):
          if member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or member.user.id in DEVS:
             if chat.id in DISABLE_CHATS:
-               await message.reply(f"Enabled anti-copyright! for {chat.title}")
+               await message.reply(f"ᴇɴᴀʙʟᴇᴅ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ.. ꜰᴏʀ {chat.title}")
                DISABLE_CHATS.remove(chat.id)
                return
-            await message.reply("Already enabled!")
+            await message.reply("ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ")
 
       elif re.search("no|off|disable".lower(), txt.lower()):
          if member.status == ChatMemberStatus.OWNER or member.user.id in DEVS:
             if chat.id in DISABLE_CHATS:
-               await message.reply("Already disabled!")
+               await message.reply("ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ")
                return
             DISABLE_CHATS.append(chat.id)
             if chat.id in MEDIA_GROUPS:
                MEDIA_GROUPS.remove(chat.id)
-            await message.reply(f"Disable Anti-CopyRight for {chat.title}!")
+            await message.reply(f"ᴅɪꜱᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ ꜰᴏʀ {chat.title}!")
          else:
-            await message.reply("Only chat Owner can disable anti-copyright!")
+            await message.reply("ᴏɴʟʏ ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴄᴀɴ ᴅɪꜱᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ")
             return 
       else:
          if member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or member.user.id in DEVS:
             if chat.id in DISABLE_CHATS:
-               await message.reply("Anti-Copyright is disable for this chat! \n\ntype `/anticopyright enable` to enable Anti-CopyRight")
+               await message.reply("ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱ ᴅɪꜱᴀʙʟᴇ ꜰᴏʀ ᴛʜɪꜱ ᴄʜᴀᴛ! \n\nᴛʏᴘᴇ `/ᴀɴᴛɪᴄᴏᴘʏʀɪɢʜᴛ ᴇɴᴀʙʟᴇ` ᴛᴏ ᴇɴᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ")
             else:
-               await message.reply("Anti-Copyright is enable for this chat! \n\ntype `/anticopyright disable` to disable Anti-CopyRight")
+               await message.reply("ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱ ᴇɴᴀʙʟᴇ ꜰᴏʀ ᴛʜɪꜱ ᴄʜᴀᴛ! \n\nᴛʏᴘᴇ `/ᴀɴᴛɪᴄᴏᴘʏʀɪɢʜᴛ ᴅɪꜱᴀʙʟᴇ` ᴛᴏ ᴅɪꜱᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ")
               
    else:
        if chat.id in DISABLE_CHATS:
-          await message.reply("Anti-Copyright is disable for this chat! \n\ntype `/anticopyright enable` to enable Anti-CopyRight")
+          await message.reply("ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱ ᴅɪꜱᴀʙʟᴇ ꜰᴏʀ ᴛʜɪꜱ ᴄʜᴀᴛ! \n\nᴛʏᴘᴇ `/ᴀɴᴛɪᴄᴏᴘʏʀɪɢʜᴛ ᴇɴᴀʙʟᴇ` ᴛᴏ ᴇɴᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ")
        else:
-          await message.reply("Anti-Copyright is enable for this chat! \n\ntype `/anticopyright disable` to disable Anti-CopyRight")
+          await message.reply("ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱ ᴇɴᴀʙʟᴇ ꜰᴏʀ ᴛʜɪꜱ ᴄʜᴀᴛ! \n\nᴛʏᴘᴇ `/ᴀɴᴛɪᴄᴏᴘʏʀɪɢʜᴛ ᴅɪꜱᴀʙʟᴇ` ᴛᴏ ᴅɪꜱᴀʙʟᴇ ᴀɴᴛɪ-ᴄᴏᴘʏʀɪɢʜᴛ")
 
 @RiZoeL.on_message(filters.all & filters.group)
 async def watcher(_, message: Message):
@@ -156,10 +163,10 @@ async def watcher(_, message: Message):
          check = GROUP_MEDIAS.get(chat.id)
          if check:
             GROUP_MEDIAS[chat.id].append(message.id)
-            print(f"Chat: {chat.title}, message ID: {message.id}")
+            print(f"ᴄʜᴀᴛ: {chat.title}, ᴍᴇꜱꜱᴀɢᴇ ɪᴅ: {message.id}")
          else:
             GROUP_MEDIAS[chat.id] = [message.id]
-            print(f"Chat: {chat.title}, message ID: {message.id}")
+            print(f"ᴄʜᴀᴛ: {chat.title}, ᴍᴇꜱꜱᴀɢᴇ ɪᴅ: {message.id}")
 
 def AutoDelete():
     if len(MEDIA_GROUPS) == 0:
@@ -179,8 +186,8 @@ def AutoDelete():
        except Exception:
           pass
     MEDIA_GROUPS.remove(i)
-    print("clean all medias ✓")
-    print("waiting for 1 hour")
+    print("ᴄʟᴇᴀɴ ᴀʟʟ ᴍᴇᴅɪᴀꜱ......")
+    print("ᴡᴀɪᴛɪɴɢ ꜰᴏʀ 1 ʜᴏᴜʀ ⌛")
 
 scheduler = BackgroundScheduler()
 scheduler.add_job(AutoDelete, "interval", seconds=3600)
@@ -188,9 +195,9 @@ scheduler.add_job(AutoDelete, "interval", seconds=3600)
 scheduler.start()
 
 def starter():
-   print('starting bot...')
+   print('ꜱᴛᴀʀᴛɪɴɢ ʙᴏᴛ...')
    RiZoeL.start()
-   print('bot Started ✓')
+   print('ʙᴏᴛ ꜱᴛᴀʀᴛᴇᴅ....')
    idle()
 
 if __name__ == "__main__":
